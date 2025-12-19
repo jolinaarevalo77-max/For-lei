@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffb6c1, #ffe4e1);
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #e84393;
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .heart {
+      font-size: 3rem;
+      animation: pulse 1.5s infinite;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    button {
+      margin-top: 25px;
+      background: #e84393;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ❤️ Lei -->
+  <h1>For My Love, <span style="color:#d63384;">Lei</span> ❤️</h1>
+
+  <div class="heart">💖</div>
+
+  <p>  
+    Every smile, every memory, and every moment with you means the world to me.
+  </p>
+
+  <p>
+    No matter where life takes us, I hope this reminds you how deeply loved you are.
+  </p>
+
+  <!-- 🎵 MUSIC (Replace music.mp3) -->
+  <audio controls preload="auto">
+  <source src="audio/last-night.mp3" type="audio/mpeg">
+</audio>
+
+
+
+  <!-- 📸 PHOTO GALLERY -->
+  <div class="gallery">
+  <img src="images/memory1.jpg" alt="Memory 1">
+  <img src="images/memory2.jpg" alt="Memory 2">
+  <img src="images/memory3.jpg" alt="Memory 3">
+</div>
+
+
+  <button onclick="alert('I love you forever ❤️')">
+    Click Me
+  </button>
+
+  <footer>
+    Made with love 💕
+  </footer>
+
+</div>
+
+</body>
+</html>
